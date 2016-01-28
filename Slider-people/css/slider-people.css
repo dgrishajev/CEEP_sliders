@@ -13,60 +13,49 @@
 	visibility: hidden;
 }
 
-.slick-dots li:first-child {
-	height: 236px;
-	width: 223px;
-	background: url(../img/btn1.png) no-repeat;
-}
-
-.slick-dots li:nth-child(2) {
-	height: 236px;
-	width: 220px;
-	background: url(../img/btn2.png) no-repeat;
-}
-
-.slick-dots li:nth-child(3) {
-	height: 236px;
-	width: 220px;
-	background: url(../img/btn3.png) no-repeat;
-}
-
+.slick-dots li:first-child,
+.slick-dots li:nth-child(2),
+.slick-dots li:nth-child(3),
 .slick-dots li:last-child {
 	height: 236px;
 	width: 220px;
-	background: url(../img/btn4.png) no-repeat;
+	background: url(../img/sprite.png) no-repeat;
 }
 
-.slick-dots li:first-child:hover {
-	background: url(../img/btn1-hover.png) no-repeat;
+.slick-dots li:first-child {
+	background-position: 0 0;
 }
 
-.slick-dots li:nth-child(2):hover {
-	background: url(../img/btn2-hover.png) no-repeat;
+.slick-dots li:nth-child(2) {
+	background-position: -440px 0;
 }
 
-.slick-dots li:nth-child(3):hover {
-	background: url(../img/btn3-hover.png) no-repeat;
+.slick-dots li:nth-child(3) {
+	background-position: -880px 0;
 }
 
-.slick-dots li:last-child:hover {
-	background: url(../img/btn4-hover.png) no-repeat;
+.slick-dots li:last-child {
+	background-position: -1320px 0;
 }
 
-.slick-dots li:nth-child(1).slick-active {
-	background: url(../img/btn1-hover.png) no-repeat;
+.slick-dots li:first-child:hover,
+.slick-dots li.slick-active:first-child {
+	background-position: -220px 0;
 }
 
+.slick-dots li:nth-child(2):hover,
 .slick-dots li.slick-active:nth-child(2) {
-	background: url(../img/btn2-hover.png) no-repeat;
+	background-position: -660px 0;
 }
 
-.slick-dots li:nth-child(3).slick-active {
-	background: url(../img/btn3-hover.png) no-repeat;
+.slick-dots li:nth-child(3):hover,
+.slick-dots li.slick-active:nth-child(3) {
+	background-position: -1100px 0;
 }
 
-.slick-dots li:nth-child(4).slick-active {
-	background: url(../img/btn4-hover.png) no-repeat;
+.slick-dots li:last-child:hover,
+.slick-dots li.slick-active:nth-child(4) {
+	background-position: -1540px 0;
 }
 
 h1 {
